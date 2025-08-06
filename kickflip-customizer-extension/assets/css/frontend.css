@@ -1,0 +1,21 @@
+.kce-custom-button-container { display: flex; align-items: center; gap: 10px; width: 100%; }
+#kce-customize-button { flex-grow: 1; }
+.kce-wishlist-area { flex-shrink: 0; margin-top: 0 !important; }
+@media (max-width: 768px) {
+    .kce-custom-button-container { flex-direction: column; align-items: stretch; }
+}
+#kce-customize-button:disabled, #kce-customize-button.disabled {
+    background-color: #888888 !important; color: #cccccc !important; cursor: not-allowed !important;
+}
+#kce-popup-wrapper { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 999999; justify-content: center; align-items: center; }
+#kce-popup-content { position: relative; width: 95%; height: 95%; background-color: #fff; box-shadow: 0 5px 15px rgba(0,0,0,.5); }
+#kce-popup-close { position: absolute; top: -15px; right: -15px; width: 35px; height: 35px; background-color: #000; color: #fff; border-radius: 50%; border: 2px solid #fff; text-align: center; line-height: 31px; cursor: pointer; font-weight: bold; font-size: 24px; font-family: Arial, sans-serif; }
+#kce-popup-iframe-container { width: 100%; height: 100%; }
+#kce-popup-iframe-container iframe { width: 100%; height: 100%; border: none; }
+body.kce-modal-open {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    touch-action: none !important;
+}
